@@ -1,0 +1,92 @@
+{
+    "id": "01aefa93-6044-4159-8358-7e91310aa05f",
+    "sceneType": "SCENE",
+    "settings": {
+        "snapEnabled": true,
+        "snapWidth": 68,
+        "snapHeight": 68,
+        "preloadPackFiles": [],
+        "createMethodName": "editorCreate",
+        "sceneKey": "Level",
+        "borderWidth": 1080,
+        "borderHeight": 1920
+    },
+    "displayList": [
+        {
+            "prefabId": "3ec10700-2a7c-4c1b-a601-ec4731de740a",
+            "id": "6a63a330-bd8d-4238-bca8-5a31cafd38ab",
+            "label": "cellGrid",
+            "scope": "CLASS",
+            "x": 89,
+            "y": 290
+        },
+        {
+            "prefabId": "d7893db7-2e05-4e1b-af27-b6ea39bed875",
+            "id": "c3e71465-b765-4c31-a0b9-95506bc4f449",
+            "unlock": [
+                "texture"
+            ],
+            "label": "orangeButton",
+            "scope": "CLASS",
+            "texture": {
+                "key": "orangeSq68px"
+            },
+            "x": 68,
+            "y": 1632
+        },
+        {
+            "prefabId": "d7893db7-2e05-4e1b-af27-b6ea39bed875",
+            "id": "944bc601-7a7b-468a-97ea-c2f17d37fa4f",
+            "unlock": [
+                "texture"
+            ],
+            "label": "greenButton",
+            "scope": "CLASS",
+            "texture": {
+                "key": "greenSq68px"
+            },
+            "x": 340,
+            "y": 1632
+        },
+        {
+            "prefabId": "d7893db7-2e05-4e1b-af27-b6ea39bed875",
+            "id": "ecdbef74-b500-4444-944b-26a77ab7a57e",
+            "unlock": [
+                "texture"
+            ],
+            "label": "blueButton",
+            "scope": "CLASS",
+            "texture": {
+                "key": "blueSq68px"
+            },
+            "x": 612,
+            "y": 1632
+        },
+        {
+            "prefabId": "d7893db7-2e05-4e1b-af27-b6ea39bed875",
+            "id": "622cb1d5-c9d6-44bd-a270-085f85aba593",
+            "unlock": [
+                "texture"
+            ],
+            "label": "redButton",
+            "scope": "CLASS",
+            "texture": {
+                "key": "redSq68px"
+            },
+            "x": 884,
+            "y": 1632
+        },
+        {
+            "type": "Container",
+            "id": "6532d5a2-cd75-4ec9-b0c7-f8f3d215ceea",
+            "label": "ui",
+            "scope": "CLASS",
+            "list": []
+        }
+    ],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType"
+    }
+}
