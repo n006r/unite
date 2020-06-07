@@ -1,0 +1,46 @@
+{
+    "section1": {
+        "files": [
+            {
+                "url": "imgs/blueSq68x68Illustr.png",
+                "type": "image",
+                "key": "blueSq68x68Illustr"
+            },
+            {
+                "url": "imgs/greenSq68x68Illustr.png",
+                "type": "image",
+                "key": "greenSq68x68Illustr"
+            },
+            {
+                "url": "imgs/orangeSq68x68Illustr.png",
+                "type": "image",
+                "key": "orangeSq68x68Illustr"
+            },
+            {
+                "url": "imgs/redSq68x68Illustr.png",
+                "type": "image",
+                "key": "redSq68x68Illustr"
+            },
+            {
+                "url": "imgs/greenSq68px.png",
+                "type": "image",
+                "key": "greenSq68px"
+            },
+            {
+                "url": "imgs/orangeSq68px.png",
+                "type": "image",
+                "key": "orangeSq68px"
+            },
+            {
+                "url": "imgs/redSq68px.png",
+                "type": "image",
+                "key": "redSq68px"
+            },
+            {
+                "url": "imgs/blueSq68px.png",
+                "type": "image",
+                "key": "blueSq68px"
+            }
+        ]
+    }
+}
