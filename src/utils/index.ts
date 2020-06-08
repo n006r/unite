@@ -6,22 +6,18 @@
 const rowsAmount = 13;
 const columnsAmount = 13;
 
-export const COLORS = {
-    ORANGE: 'ORANGE',
-    BLUE: 'BLUE',
-    GREEN: 'GREEN',
-    RED: 'RED',
-}
+export enum COLOR {
+    ORANGE = 'ORANGE',
+    BLUE = 'BLUE',
+    GREEN = 'GREEN',
+    RED = 'RED',
+};
 
 const CELL_COLOR = {
-    // ORANGE: 'orangeSq68x73',
-	// BLUE: 'blueSq68x73',
-	// GREEN: 'greenSq68x73',
-	// RED: 'redSq68x73',
-	ORANGE: 'orangeSq68x68Illustr',
-	BLUE: 'blueSq68x68Illustr',
-	GREEN: 'greenSq68x68Illustr',
-	RED: 'redSq68x68Illustr',
+	[COLOR.ORANGE]: 'orangeSq68x68Illustr',
+	[COLOR.BLUE]: 'blueSq68x68Illustr',
+	[COLOR.GREEN]: 'greenSq68x68Illustr',
+	[COLOR.RED]: 'redSq68x68Illustr',
 }
 
 let COLOR_BY_TEXTURE_KEY = {};
@@ -35,8 +31,8 @@ export const getColorByTextureKey = (key) => COLOR_BY_TEXTURE_KEY[key];
 
 export const getColorTextureKeyByColor = color => CELL_COLOR[color];
 
-export const getRandomColor = () => {
-    const colors = Object.keys(CELL_COLOR);
+export const getRandomColor = (): COLOR => {
+    const colors = Object.values(COLOR);
     const randomIndex = Math.floor(Math.random() * colors.length);
     return colors[randomIndex];
 }

@@ -40,6 +40,11 @@
                 "url": "imgs/blueSq68px.png",
                 "type": "image",
                 "key": "blueSq68px"
+            },
+            {
+                "url": "markup/gameOverModal.html",
+                "type": "html",
+                "key": "gameOverModal"
             }
         ]
     }

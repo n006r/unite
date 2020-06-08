@@ -1,18 +1,21 @@
 import Phaser from 'phaser';
-import {getColorTextureKeyByColor, getColorByTextureKey} from '../utils';
+import {COLOR, getColorTextureKeyByColor, getColorByTextureKey} from '../utils';
 
 export default class Cell extends Phaser.GameObjects.Sprite {
+
+	neighbors: Cell[];
+	tween?: Phaser.Tweens.Tween;
 	
-	constructor(scene, x, y, texture, frame) {
-		super(scene, x, y, texture || "blueSq68px");
+	constructor(scene, x, y, color: COLOR, onConqueredCallback) {
+		super(scene, x, y, getColorTextureKeyByColor(color));
 		
 		
 		this.setData('isConquered', false);
-		this.setData('color', getColorByTextureKey(this.texture.key));
+		this.setData('color', color);
 
 		this.on('changedata-isConquered', (gameObj, value, prevValue) => {
 			if (value) {
-				this.scene.incConqueredCellsCount();
+				onConqueredCallback();
 			} else {
 				this.returnToUsual();
 			}
