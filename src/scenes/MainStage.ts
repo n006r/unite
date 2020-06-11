@@ -86,19 +86,63 @@ export default class MainStage extends Phaser.Scene {
 		})
 		
 		// orangeButton
-		const orangeButton = new ChooseColorButton(this, 89, 1632, "orangeSq68px");
+		this.anims.create({
+			key: 'orangeButtonOn',
+			frames: this.anims.generateFrameNames('orangeButton', { prefix: 'OrangeButton', end: 9, zeroPad: 4 }),
+			frameRate: 60,
+			repeat: 0,
+		});
+		this.anims.create({
+			key: 'orangeButtonOff',
+			frames: this.anims.generateFrameNames('orangeButton', { prefix: 'OrangeButton', start: 9, end: 0, zeroPad: 4 }),
+			frameRate: 60,
+		});
+		const orangeButton = new ChooseColorButton(this, 55, 1632, "orangeButton");
 		this.add.existing(orangeButton);
 		
 		// greenButton
-		const greenButton = new ChooseColorButton(this, 89 + 216 + 37, 1632, "greenSq68px");
+		this.anims.create({
+			key: 'greenButtonOn',
+			frames: this.anims.generateFrameNames('greenButton', { prefix: 'GreenButton', end: 9, zeroPad: 4 }),
+			frameRate: 60,
+			repeat: 0,
+		});
+		this.anims.create({
+			key: 'greenButtonOff',
+			frames: this.anims.generateFrameNames('greenButton', { prefix: 'GreenButton', start: 9, end: 0, zeroPad: 4 }),
+			frameRate: 60,
+		});
+		const greenButton = new ChooseColorButton(this, 55 + 216 + 37, 1632, "greenButton");
 		this.add.existing(greenButton);
 		
 		// blueButton
-		const blueButton = new ChooseColorButton(this, 89 + (216 + 37) * 2, 1632, "blueSq68px");
+		this.anims.create({
+			key: 'blueButtonOn',
+			frames: this.anims.generateFrameNames('blueButton', { prefix: 'BlueButton', end: 9, zeroPad: 4 }),
+			frameRate: 60,
+			repeat: 0,
+		});
+		this.anims.create({
+			key: 'blueButtonOff',
+			frames: this.anims.generateFrameNames('blueButton', { prefix: 'BlueButton', start: 9, end: 0, zeroPad: 4 }),
+			frameRate: 60,
+		});
+		const blueButton = new ChooseColorButton(this, 55 + (216 + 37) * 2, 1632, "blueButton");
 		this.add.existing(blueButton);
 		
 		// redButton
-		const redButton = new ChooseColorButton(this, 89 + (216 + 37) * 3, 1632, "redSq68px");
+		this.anims.create({
+			key: 'redButtonOn',
+			frames: this.anims.generateFrameNames('redButton', { prefix: 'RedButton', end: 9, zeroPad: 4 }),
+			frameRate: 60,
+			repeat: 0,
+		});
+		this.anims.create({
+			key: 'redButtonOff',
+			frames: this.anims.generateFrameNames('redButton', { prefix: 'RedButton', start: 9, end: 0, zeroPad: 4 }),
+			frameRate: 60,
+		});
+		const redButton = new ChooseColorButton(this, 55 + (216 + 37) * 3, 1632, "redButton");
 		this.add.existing(redButton);
 		
 		// ui
@@ -154,18 +198,39 @@ export default class MainStage extends Phaser.Scene {
 
 		orangeButton.on('pointerdown', () => {
 			this.onUserChangeColor(COLOR.ORANGE);
+			orangeButton.play('orangeButtonOn');
+
+			blueButton.play('blueButtonOff');
+			greenButton.play('greenButtonOff');
+			redButton.play('redButtonOff');
 		});
 
 		greenButton.on('pointerdown', () => {
 			this.onUserChangeColor(COLOR.GREEN);
+			greenButton.play('greenButtonOn');
+
+			blueButton.play('blueButtonOff');
+			orangeButton.play('orangeButtonOff');
+			redButton.play('redButtonOff');
 		});
 
 		blueButton.on('pointerdown', () => {
 			this.onUserChangeColor(COLOR.BLUE);
+			blueButton.play('blueButtonOn');
+
+
+			greenButton.play('greenButtonOff');
+			orangeButton.play('orangeButtonOff');
+			redButton.play('redButtonOff');
 		});
 
 		redButton.on('pointerdown', () => {
 			this.onUserChangeColor(COLOR.RED);
+			redButton.play('redButtonOn');
+
+			blueButton.play('blueButtonOff');
+			greenButton.play('greenButtonOff');
+			orangeButton.play('orangeButtonOff');
 		});
 
 

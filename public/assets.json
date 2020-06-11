@@ -45,6 +45,30 @@
                 "url": "markup/gameOverModal.html",
                 "type": "html",
                 "key": "gameOverModal"
+            },
+            {
+                "type": "atlas",
+                "key": "blueButton",
+                "textureURL": "spriteSheets/blueButton.png",
+                "atlasURL": "spriteSheets/blueButton.json"
+            },
+            {
+                "type": "atlas",
+                "key": "greenButton",
+                "textureURL": "spriteSheets/greenButton.png",
+                "atlasURL": "spriteSheets/greenButton.json"
+            },
+            {
+                "type": "atlas",
+                "key": "orangeButton",
+                "textureURL": "spriteSheets/orangeButton.png",
+                "atlasURL": "spriteSheets/orangeButton.json"
+            },
+            {
+                "type": "atlas",
+                "key": "redButton",
+                "textureURL": "spriteSheets/redButton.png",
+                "atlasURL": "spriteSheets/redButton.json"
             }
         ]
     }
