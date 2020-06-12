@@ -9,8 +9,6 @@ export default class GameOverModal extends Phaser.GameObjects.DOMElement {
 		super(scene, x, y);
 		this.createFromCache('gameOverModal');
 
-		console.log('node is');
-		console.log(this.node);
 		const HTMLModalContainer = this.node.getElementsByClassName('modal-container')[0] as HTMLElement;
 
 		HTMLModalContainer.style.width = `${this.scene.cameras.main.width}px`;
@@ -23,6 +21,8 @@ export default class GameOverModal extends Phaser.GameObjects.DOMElement {
 
 		this.absoluteRecordSign = this.node.querySelector('.absoluteRecord .value') as HTMLElement;
 		this.currentRecordSign = this.node.querySelector('.currentRecord .value') as HTMLElement;
+
+		this.setOrigin(0, 0);
 	}
 
 	setAbsoluteRecord(value) {

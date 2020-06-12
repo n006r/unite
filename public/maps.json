@@ -1,4 +1,4 @@
-export const MAPS = JSON.parse(`[
+[
     {
         "minSteps":["GREEN","ORANGE","BLUE","GREEN","BLUE","ORANGE","BLUE","GREEN","ORANGE","RED","BLUE"],
         "grid":[
@@ -154,4 +154,4 @@ export const MAPS = JSON.parse(`[
             [{"color":"RED"},{"color":"ORANGE"},{"color":"GREEN"},{"color":"ORANGE"},{"color":"GREEN"},{"color":"RED"},{"color":"ORANGE"},{"color":"BLUE"},{"color":"BLUE"},{"color":"GREEN"},{"color":"RED"},{"color":"BLUE"},{"color":"ORANGE"}]
         ]
     }
-]`);
+]

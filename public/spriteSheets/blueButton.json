@@ -2,7 +2,7 @@
 
 {
 	"filename": "BlueButton0000",
-	"frame": {"x":0,"y":0,"w":216,"h":272},
+	"frame": {"x":0,"y":0,"w":216,"h":271},
 	"rotated": false,
 	"trimmed": false,
 	"spriteSourceSize": {"x":0,"y":0,"w":216,"h":272},

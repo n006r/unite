@@ -94,15 +94,8 @@ class Boot extends Phaser.Scene {
 	preload() {
 		this.load.pack("pack", "assets.json");
 	}
-	create() {
-
-		this.registry.set('map', 0);
-		this.registry.set('absoluteRecord', localStorage.getItem('absoluteRecord') || 0);
-		this.registry.events.on('changedata-absoluteRecord', (game, value) => {
-			localStorage.setItem('absoluteRecord', value);
-		})
+	create() {		
 		this.scene.start("MainStage");
-		// this.scene.get('Level').events.on('mapApplied', onGameCreate);
 	}
 
 }

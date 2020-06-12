@@ -37,19 +37,19 @@ export const getRandomColor = (): COLOR => {
     return colors[randomIndex];
 }
 
-const getLevel = () => {
-    const grid = [];
-	for (let row = 0; row < rowsAmount; row++) {
-		grid [row] = [];
-		for (let column = 0; column < columnsAmount; column++) {
-			const cell = {color: getRandomColor()};
-			grid[row][column] = cell;
-		}
-    }
-    const r = {
-        minSteps: [],
-        grid,
-    };
-    // return JSON.stringify(r); 
-    return r;
-}
+// const getLevel = () => {
+//     const grid = [];
+// 	for (let row = 0; row < rowsAmount; row++) {
+// 		grid [row] = [];
+// 		for (let column = 0; column < columnsAmount; column++) {
+// 			const cell = {color: getRandomColor()};
+// 			grid[row][column] = cell;
+// 		}
+//     }
+//     const r = {
+//         minSteps: [],
+//         grid,
+//     };
+//     // return JSON.stringify(r); 
+//     return r;
+// }

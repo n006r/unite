@@ -27,7 +27,6 @@ export default class Cell extends Phaser.GameObjects.Sprite {
 		})
 		this.on('changedata-color', (gameObj, value, prevValue) => {
 			const textureName = getColorTextureKeyByColor(value);
-			console.log(textureName);
 			this.setTexture(textureName);
 
 			if (value !== prevValue && this.scene.registry.get('mode') === 'playing') {

@@ -22,26 +22,6 @@
                 "key": "redSq68x68Illustr"
             },
             {
-                "url": "imgs/greenSq68px.png",
-                "type": "image",
-                "key": "greenSq68px"
-            },
-            {
-                "url": "imgs/orangeSq68px.png",
-                "type": "image",
-                "key": "orangeSq68px"
-            },
-            {
-                "url": "imgs/redSq68px.png",
-                "type": "image",
-                "key": "redSq68px"
-            },
-            {
-                "url": "imgs/blueSq68px.png",
-                "type": "image",
-                "key": "blueSq68px"
-            },
-            {
                 "url": "markup/gameOverModal.html",
                 "type": "html",
                 "key": "gameOverModal"
@@ -69,6 +49,11 @@
                 "key": "redButton",
                 "textureURL": "spriteSheets/redButton.png",
                 "atlasURL": "spriteSheets/redButton.json"
+            },
+            {
+                "type": "json",
+                "key": "maps",
+                "url": "maps.json"
             }
         ]
     }

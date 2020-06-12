@@ -1,0 +1,33 @@
+{
+    "name": "unite!",
+    "short_name": "unite!",
+    "icons": [{
+        "src": "/icons/main128.png",
+        "sizes": "128x128",
+        "type": "image/png"
+      }, {
+        "src": "/icons/main144.png",
+        "sizes": "144x144",
+        "type": "image/png"
+      }, {
+        "src": "/icons/main152.png",
+        "sizes": "152x152",
+        "type": "image/png"
+      }, {
+        "src": "/icons/main192.png",
+        "sizes": "192x192",
+        "type": "image/png"
+      }, {
+        "src": "/icons/main256.png",
+        "sizes": "256x256",
+        "type": "image/png"
+      }, {
+        "src": "/icons/main512.png",
+        "sizes": "512x512",
+        "type": "image/png"
+      }],
+    "start_url": "/index.html",
+    "display": "standalone",
+    "background_color": "#ececec",
+    "theme_color": "#e87b0c"
+  }
